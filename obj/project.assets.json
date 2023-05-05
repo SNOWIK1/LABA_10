@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user.COMP-02\\source\\repos\\Lists\\Lists.csproj",
+      "projectUniqueName": "C:\\Users\\user.COMP-02\\Desktop\\Lists\\Lists.csproj",
       "projectName": "Lists",
-      "projectPath": "C:\\Users\\user.COMP-02\\source\\repos\\Lists\\Lists.csproj",
+      "projectPath": "C:\\Users\\user.COMP-02\\Desktop\\Lists\\Lists.csproj",
       "packagesPath": "C:\\Users\\user.COMP-02\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user.COMP-02\\source\\repos\\Lists\\obj\\",
+      "outputPath": "C:\\Users\\user.COMP-02\\Desktop\\Lists\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

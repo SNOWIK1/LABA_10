@@ -6,7 +6,7 @@
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:Lists"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="LightGray">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -17,21 +17,44 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0">
             <Label Content="Students" FontSize="16"/>
-            <ListBox x:Name="students"/>
+            <ListBox x:Name="Students"/>
         </StackPanel>
 
         <StackPanel Grid.Column="1">
-            <Label Content="Students" FontSize="16"/>
-            <ListBox x:Name="credits"/>
+            <Label Content="Certified students" FontSize="16"/>
+            <ListBox x:Name="Certified"/>
         </StackPanel>
 
         <StackPanel Grid.Column="2">
-            <Label Content="Students" FontSize="16"/>
+            <Label Content="Marks" FontSize="16"/>
+            <ListBox x:Name="Marks"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="3">
+            <Label Content="Not certified students" FontSize="16"/>
             <ListBox x:Name="notСertified"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right">
+            <Label Content="Surname:" FontSize="16"/>
+            <Label Content="*Mark:" FontSize="16" Margin="0 14 0 0" ToolTip="The mark should only be indicated when you want to add a student to the list of certified students"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+            <TextBox Background="White" FontSize="14" x:Name="Surname" Margin="10 55 10 0"/>
+            <TextBox Background="White" FontSize="14" x:Name="Mark" Margin="10 25 10 40"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2">
+            <Button Content="Certified" FontSize="16" Click="Certify" Margin="15 20 15 0"/>
+            <Button Content="Add to list" FontSize="16" Click="Add" Margin="15 20 15 0"/>
+            <Button Content="Not certified" FontSize="16" Click="doNotCertify" Margin="15 20 15 0"/>
+            <Button Content="Clear" FontSize="16" Click="Clear" Margin="15 20 15 0"/>
         </StackPanel>
 
     </Grid>
